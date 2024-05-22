@@ -4,3 +4,10 @@
   justify-content: $jus;
   align-items: $align;
 }
+
+// Preguntar si esta bien el mixin asi?
+@mixin min-width($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}

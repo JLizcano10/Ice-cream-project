@@ -1,0 +1,37 @@
+.btn {
+  width: 160px;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+  background-color: $background-white-1;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $background-white-1;
+    fill: $background-white-1;
+  }
+
+  &--flex {
+    display: none;
+    // @include flex(row, center, center);
+    // gap: 8px;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 24px;
+  }
+}
+
+/*RESPONSIVE*/
+
+@include min-width(768px) {
+  .btn {
+    &--flex {
+      @include flex(row, center, center);
+      gap: 8px;
+    }
+  }
+}

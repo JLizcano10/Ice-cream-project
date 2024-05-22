@@ -1,0 +1,89 @@
+.header-page {
+  height: 60px;
+
+  &__container {
+    @include flex(row, space-between, center);
+    height: 100%;
+  }
+
+  &__logo {
+    width: 199px;
+    height: 50px;
+    fill: $accent-color;
+  }
+}
+
+.navbar {
+  @include flex(row, center, center);
+  &__list {
+    display: none;
+  }
+  //   &__item {
+  //   }
+  &__link {
+    font-size: 16px;
+    font-weight: 700;
+    color: $background-white-1;
+    transition: color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+// Comprobar mejor ubicacion para el bloque cta - PENDIENTE
+
+.cta {
+  //   &__item {
+  //   }
+  &__btn {
+    @include flex(row, center, center);
+    background-color: transparent;
+    border: none;
+  }
+
+  &__btn:hover &__icon,
+  &__btn:focus &__icon {
+    fill: $background-pink-dark;
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 42px;
+    height: 26px;
+    fill: $accent-color;
+  }
+}
+
+/*RESPONSIVE*/
+
+@include min-width(768px) {
+  .header-page {
+    height: 80px;
+  }
+
+  .cta {
+    @include flex(row, center, center);
+  }
+}
+
+@include min-width(1200px) {
+  .header-page {
+    height: 100px;
+  }
+
+  .navbar {
+    gap: 125px;
+    &__list {
+      @include flex(row, center, center);
+      gap: 25px;
+    }
+  }
+
+  .cta {
+    &__btn {
+      display: none;
+    }
+  }
+}

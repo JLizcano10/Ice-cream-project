@@ -9,6 +9,8 @@
   &__container {
     position: relative;
     height: 100%;
+    // Al agregar burbujas esto hace que el contenido se sobreponga a dichas burbujas
+    z-index: 5;
     overflow: hidden;
   }
 

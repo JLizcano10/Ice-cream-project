@@ -41,7 +41,7 @@
             </button>
           </li>
           <li class="cta__item">
-            <button class="btn btn--flex" type="button">
+            <button class="btn btn--vector" type="button">
               Buy now
               <!-- <img src="./images/vector.svg" alt="" /> -->
               <svg class="btn__icon">
@@ -52,7 +52,78 @@
         </ul>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <ul class="hero__grid">
+            <li class="hero__intro">
+              <h1 class="hero__title">
+                ice cream made with
+                <span class="hero__title--accent">passion</span>
+              </h1>
+              <ul class="hero__list">
+                <li class="hero__item"><a class="btn" href="">Products</a></li>
+                <li class="hero__item">
+                  <a class="btn" href="">How it’s made?</a>
+                </li>
+              </ul>
+            </li>
+            <li class="hero__stats hidden-mobile">
+              <ul class="hero__list hero__list--column">
+                <li class="hero__item hero__item--flex">
+                  <p class="hero__number">16</p>
+                  <p class="hero__label">cafes</p>
+                </li>
+                <li class="hero__item hero__item--flex">
+                  <p class="hero__number">23</p>
+                  <p class="hero__label">food trucks</p>
+                </li>
+              </ul>
+            </li>
+            <li class="hero__description hidden-mobile">
+              <div class="hero__thumb">
+                <img
+                  srcset="
+                    ./images/tablet/milk-bottle.png  152w,
+                    ./images/desktop/milk-bottle.png 213w
+                  "
+                  sizes="(min-width: 1200px) 213px,
+                  (min-width: 768px) 152px, 100vw"
+                  src="./images/tablet/milk-bottle.png"
+                  alt=" bottle of milk"
+                />
+                <!-- <img
+                  src="./images/desktop/milk-bottle.png"
+                  alt=" bottle of milk"
+                /> -->
+              </div>
+              <div class="hero__box">
+                <p class="hero__text">
+                  Indulge in a scoop of ice cream made with passion and treat
+                  your taste buds to an unforgettable experience!
+                </p>
+                <img class="arrow" src="./images/arrow.svg" alt="red arrow" />
+              </div>
+            </li>
+            <li class="hero__image hidden-mobile">
+              <div class="hero__thumb hero__thumb--size">
+                <img
+                  srcset="
+                    ./images/tablet/girl.png  190w,
+                    ./images/desktop/girl.png 304w
+                  "
+                  sizes="(min-width: 1200px) 304px, 
+                  (min-width: 768px) 190px, 100vw
+                 "
+                  src="./images/tablet/girl.png"
+                  alt="girl eat ice cream"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

@@ -1,8 +1,9 @@
 .btn {
-  width: 160px;
-  height: 44px;
+  display: inline-block;
+  padding: 10px 25px;
   border: none;
   border-radius: 22px;
+  color: $accent-color;
   background-color: $background-white-1;
   cursor: pointer;
 
@@ -10,18 +11,21 @@
   &:focus {
     background-color: $accent-color;
     color: $background-white-1;
-    fill: $background-white-1;
   }
 
-  &--flex {
+  &--vector {
     display: none;
-    // @include flex(row, center, center);
-    // gap: 8px;
+  }
+
+  &--vector:hover &__icon,
+  &--vector:focus &__icon {
+    fill: $background-white-1;
   }
 
   &__icon {
     width: 16px;
     height: 24px;
+    fill: $accent-color;
   }
 }
 
@@ -29,7 +33,7 @@
 
 @include min-width(768px) {
   .btn {
-    &--flex {
+    &--vector {
       @include flex(row, center, center);
       gap: 8px;
     }

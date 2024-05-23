@@ -1,5 +1,6 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css";
 
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Titan+One&display=swap");
 *,
 *::before,
 *::after {
@@ -12,9 +13,10 @@
 }
 
 body {
-  background-color: $background-white-1;
-  background-color: $background-white-1;
+  font-family: "DM Sans", sans-serif;
   color: $main-text-color;
+  background-color: $background-white-1;
+  font-size: 12px;
 }
 
 h1,
@@ -23,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 34px;
+  font-family: "Titan One", sans-serif;
 }
 
 ul {
@@ -37,6 +39,7 @@ img {
 }
 
 a {
+  display: block;
   text-decoration: none;
 }
 
@@ -55,6 +58,15 @@ a {
   padding-bottom: 60px;
 }
 
+.arrow {
+  width: 18px;
+  transition: transform 150ms ease-in;
+  &:hover,
+  &:focus {
+    transform: rotateZ(-90deg);
+  }
+}
+
 /*RESPONSIVE*/
 
 @include min-width(768px) {
@@ -68,5 +80,9 @@ a {
   .container {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .arrow {
+    width: 26px;
   }
 }

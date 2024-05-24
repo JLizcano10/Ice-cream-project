@@ -11,7 +11,7 @@
   &__content {
     @include flex(column, flex-start, flex-start);
     gap: 10px;
-    background-image: url(../../images/mobile/how-it-made-bg.png);
+    background-image: url(../images/mobile/how-it-made-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -71,7 +71,7 @@
     &__content {
       @include flex(column, flex-start, flex-start);
       gap: 10px;
-      background-image: url(../../images/mobile/how-it-made-bg@2x.png);
+      background-image: url(../images/mobile/how-it-made-bg@2x.png);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -160,7 +160,7 @@
       &--flex {
         @include flex(row, flex-start, center);
         gap: 90px;
-        background-image: url(../../images/desktop/how-it-made-bg.png);
+        background-image: url(../images/desktop/how-it-made-bg.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -221,7 +221,7 @@
     .how-it-made {
       &__section {
         &--flex {
-          background-image: url(../../images/desktop/how-it-made-bg@2x.png);
+          background-image: url(../images/desktop/how-it-made-bg@2x.png);
         }
       }
     }

@@ -72,7 +72,7 @@
 @include min-width(768px) {
   .hero {
     height: 416px;
-    background-image: url(../../images/tablet/hero-bg.png);
+    background-image: url(../images/tablet/hero-bg.png);
     background-position: 55% bottom;
 
     &__grid {
@@ -174,7 +174,7 @@
 @include min-width(1200px) {
   .hero {
     height: 664px;
-    background-image: url(../../images/desktop/hero-bg.png);
+    background-image: url(../images/desktop/hero-bg.png);
     background-size: auto 620px;
     background-position: 72% bottom;
 

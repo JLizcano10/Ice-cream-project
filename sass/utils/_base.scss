@@ -70,6 +70,7 @@ a {
     letter-spacing: 0.04em;
     text-align: center;
     color: $accent-color;
+    margin-bottom: 10px;
   }
 }
 
@@ -95,14 +96,13 @@ a {
   }
 
   .section {
-    // revisar padding de secciones
-
     &__lead {
       font-size: 26px;
     }
 
     &__title {
       font-size: 48px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -114,8 +114,6 @@ a {
   }
 
   .section {
-    // revisar padding de secciones
-
     &__lead {
       font-size: 30px;
     }
@@ -123,6 +121,7 @@ a {
     &__title {
       font-size: 58px;
       letter-spacing: 0.06em;
+      margin-bottom: 30px;
     }
   }
 

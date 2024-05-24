@@ -1,0 +1,229 @@
+.how-it-made {
+  background-color: $background-pink-light;
+
+  &__section:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  &__thumb {
+    width: 100%;
+  }
+  //   Para coincidir con el diseño primero lo ubico aqui en el .how-it-made__content y en version para desktop se mueve a .how-it-made__section--flex.
+  &__content {
+    @include flex(column, flex-start, flex-start);
+    gap: 10px;
+    background-image: url(../../images/mobile/how-it-made-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__info {
+    width: 220px;
+    font-weight: 500;
+    line-height: 162%;
+    letter-spacing: 0.04em;
+    text-wrap: pretty;
+    &--color {
+      color: $secondary-text-color;
+    }
+  }
+
+  //   Segundo bloque con lista
+  &__list {
+    @include flex($dir: column);
+    gap: 30px;
+  }
+
+  &__item {
+    @include flex(column, flex-start, flex-start);
+    gap: 20px;
+  }
+
+  &__icon {
+    width: 33px;
+    height: 50px;
+    fill: $background-pink-dark;
+
+    &--medium {
+      width: 44px;
+    }
+    &--large {
+      width: 49.7px;
+    }
+  }
+  &__data {
+    font-family: "Titan One", sans-serif;
+    font-size: 36px;
+    color: $accent-color;
+    letter-spacing: 0.04em;
+  }
+  &__text {
+    font-weight: 700;
+    line-height: 170%;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .how-it-made {
+    &__content {
+      @include flex(column, flex-start, flex-start);
+      gap: 10px;
+      background-image: url(../../images/mobile/how-it-made-bg@2x.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+/*RESPONSIVE*/
+
+@include min-width(768px) {
+  .how-it-made {
+    background-color: $background-pink-light;
+    &__section {
+      &--flex {
+        @include flex(row, space-around, flex-start);
+        gap: 40px;
+      }
+    }
+
+    &__section:not(:last-child) {
+      margin-bottom: 60px;
+    }
+
+    &__thumb {
+      width: 336px;
+    }
+
+    &__content {
+      gap: 20px;
+      background-image: none;
+    }
+
+    &__info {
+      width: 334px;
+      font-size: 14px;
+      line-height: 174%;
+      letter-spacing: 0.04em;
+      text-wrap: pretty;
+      &--color {
+        line-height: 194%;
+        color: $secondary-text-color;
+      }
+    }
+
+    //   Segundo bloque con lista
+    &__list {
+      @include flex(row, flex-start, center);
+      gap: 20px;
+    }
+
+    &__item {
+      @include flex(column, flex-start, flex-start);
+      gap: 30px;
+    }
+
+    &__icon {
+      width: 50px;
+      height: 50px;
+      fill: $background-pink-dark;
+
+      &--medium {
+        width: 50px;
+      }
+      &--large {
+        width: 44px;
+      }
+    }
+    &__data {
+      font-family: "Titan One", sans-serif;
+      font-size: 36px;
+      color: $accent-color;
+      letter-spacing: 0.04em;
+    }
+    &__text {
+      font-weight: 700;
+      line-height: 170%;
+      letter-spacing: 0.02em;
+      text-align: left;
+    }
+  }
+}
+
+@include min-width(1200px) {
+  .how-it-made {
+    &__section {
+      &--flex {
+        @include flex(row, flex-start, center);
+        gap: 90px;
+        background-image: url(../../images/desktop/how-it-made-bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    &__thumb {
+      width: 501px;
+    }
+    &__content {
+      width: 400px;
+      gap: 30px;
+    }
+    &__info {
+      width: 400px;
+      font-size: 16px;
+      line-height: 176%;
+      &--color {
+        font-size: 14px;
+      }
+    }
+
+    //   Segundo bloque con lista
+    &__list {
+      @include flex(row, flex-start, flex-start);
+    }
+
+    &__item {
+      @include flex(column, flex-start, flex-start);
+      width: 315px;
+      height: 253px;
+      gap: 20px;
+    }
+
+    &__icon {
+      width: 50px;
+      height: 50px;
+      fill: $background-pink-dark;
+
+      &--medium {
+        width: 50px;
+      }
+      &--large {
+        width: 44px;
+      }
+    }
+    &__data {
+      font-size: 58px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 176%;
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .how-it-made {
+      &__section {
+        &--flex {
+          background-image: url(../../images/desktop/how-it-made-bg@2x.png);
+        }
+      }
+    }
+  }
+}

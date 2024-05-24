@@ -13,8 +13,12 @@
     color: $background-white-1;
   }
 
-  &--vector {
-    display: none;
+  &__vector {
+    @include flex(row, center, center);
+    width: 180px;
+    &--hidden {
+      display: none;
+    }
   }
 
   &--vector:hover &__icon,

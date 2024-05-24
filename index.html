@@ -7,7 +7,7 @@
     <title>IceCream</title>
   </head>
   <body>
-    <header class="header-page">
+    <!-- <header class="header-page">
       <div class="container header-page__container">
         <nav class="navbar">
           <svg class="header-page__logo">
@@ -31,6 +31,7 @@
             </li>
           </ul>
         </nav>
+        // cta(abbreviation): call to action
         <ul class="cta">
           <li class="cta__item">
             <button class="cta__btn" type="button">
@@ -49,9 +50,9 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container hero__container">
           <ul class="hero__grid">
             <li class="hero__intro">
@@ -116,8 +117,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="product section">
+      </section> -->
+      <!-- <section class="product section">
         <div class="container">
           <p class="section__lead product__lead">100% natural</p>
           <h2 class="section__title product__title">Products</h2>
@@ -223,6 +224,89 @@
               </article>
             </li>
           </ul>
+        </div>
+      </section> -->
+      <section class="how-it-made section">
+        <div class="container">
+          <p class="section__lead">tradition and love</p>
+          <h2 class="section__title">how it’s made?</h2>
+          <div class="how-it-made__section how-it-made__section--flex">
+            <div class="how-it-made__thumb">
+              <img
+                srcset="
+                  ./images/mobile/cow.png      280w,
+                  ./images/mobile/cow@2x.png   560w,
+                  ./images/tablet/cow.png      336w,
+                  ./images/tablet/cow@2x.png   672w,
+                  ./images/desktop/cow.png     501w,
+                  ./images/desktop/cow@2x.png 1002w
+                "
+                sizes="(min-width: 1200px) 501px,
+                (min-width: 768px) 336px,
+                (max-width: 767px) 280px, 100vw"
+                src="./images/mobile/cow.png"
+                alt="Milk cow"
+              />
+            </div>
+            <div class="how-it-made__content">
+              <p class="how-it-made__info">
+                Ice is a place where you will become not only a little happier,
+                but also healthier. Health is the main value for us, and we
+                follow it when creating our handmade desserts.
+              </p>
+              <p class="how-it-made__info how-it-made__info--color">
+                We use traditional recipes and 100% natural ingredients. Our
+                products are so natural that they can be given to children from
+                the age of three years. Sweets lovers can expect 55 types of ice
+                cream, 15 types of coffee and 23 milkshakes.
+              </p>
+
+              <a
+                class="btn btn__vector"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Read more
+                <svg class="btn__icon">
+                  <use href="./images/sprite.svg#icon-vector"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="how-it-made__section">
+            <ul class="how-it-made__list">
+              <li class="how-it-made__item">
+                <svg class="how-it-made__icon">
+                  <use href="./images/sprite.svg#icon-milk"></use>
+                </svg>
+                <p class="how-it-made__data">721</p>
+                <p class="how-it-made__text">
+                  At 721 Cow, we're passionate about producing the highest
+                  quality ice cream possible.
+                </p>
+              </li>
+              <li class="how-it-made__item">
+                <svg class="how-it-made__icon how-it-made__icon--large">
+                  <use href="./images/sprite.svg#icon-gelato"></use>
+                </svg>
+                <p class="how-it-made__data">16 KG</p>
+                <p class="how-it-made__text">
+                  You can be sure you're getting a scoop of the freshest ice
+                  cream around.
+                </p>
+              </li>
+              <li class="how-it-made__item">
+                <svg class="how-it-made__icon how-it-made__icon--medium">
+                  <use href="./images/sprite.svg#icon-heart"></use>
+                </svg>
+                <p class="how-it-made__data">84</p>
+                <p class="how-it-made__text">
+                  We use only the freshest, locally-sourced ingredients to make
+                  our 84 unique and delicious flavors.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>

@@ -185,10 +185,6 @@
       min-width: 100%;
     }
 
-    // &__intro {
-    //   gap: 20px;
-    // }
-
     &__title {
       width: 278px;
       font-size: 38px;
@@ -244,9 +240,7 @@
         height: auto;
       }
     }
-    // &__box {
-    //   @include flex(row, flex-start, center);
-    // }
+
     &__text {
       width: 200px;
       margin-bottom: 10px;

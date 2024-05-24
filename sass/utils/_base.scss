@@ -56,6 +56,21 @@ a {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  &__lead {
+    margin-bottom: 5px;
+    font-family: "Titan One", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: $background-pink-dark;
+  }
+
+  &__title {
+    font-size: 34px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: $accent-color;
+  }
 }
 
 .arrow {
@@ -64,6 +79,10 @@ a {
   &:hover,
   &:focus {
     transform: rotateZ(-90deg);
+  }
+
+  &--size {
+    width: 40px;
   }
 }
 
@@ -74,6 +93,18 @@ a {
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  .section {
+    // revisar padding de secciones
+
+    &__lead {
+      font-size: 26px;
+    }
+
+    &__title {
+      font-size: 48px;
+    }
+  }
 }
 
 @include min-width(1200px) {
@@ -82,7 +113,24 @@ a {
     padding-right: 16px;
   }
 
+  .section {
+    // revisar padding de secciones
+
+    &__lead {
+      font-size: 30px;
+    }
+
+    &__title {
+      font-size: 58px;
+      letter-spacing: 0.06em;
+    }
+  }
+
   .arrow {
     width: 26px;
+
+    &--size {
+      width: 40px;
+    }
   }
 }

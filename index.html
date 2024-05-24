@@ -31,7 +31,6 @@
             </li>
           </ul>
         </nav>
-        <!-- cta(abbreviation): call to action -->
         <ul class="cta">
           <li class="cta__item">
             <button class="cta__btn" type="button">
@@ -43,7 +42,6 @@
           <li class="cta__item">
             <button class="btn btn--vector" type="button">
               Buy now
-              <!-- <img src="./images/vector.svg" alt="" /> -->
               <svg class="btn__icon">
                 <use href="./images/sprite.svg#icon-vector"></use>
               </svg>
@@ -92,10 +90,6 @@
                   src="./images/tablet/milk-bottle.png"
                   alt=" bottle of milk"
                 />
-                <!-- <img
-                  src="./images/desktop/milk-bottle.png"
-                  alt=" bottle of milk"
-                /> -->
               </div>
               <div class="hero__box">
                 <p class="hero__text">
@@ -119,6 +113,114 @@
                   alt="girl eat ice cream"
                 />
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="product section">
+        <div class="container">
+          <p class="section__lead product__lead">100% natural</p>
+          <h2 class="section__title product__title">Products</h2>
+          <ul class="product__list">
+            <li class="product__item">
+              <div class="product__thumb">
+                <img
+                  srcset="
+                    ./images/mobile/ice-cream.png     280w,
+                    ./images/mobile/ice-cream@2x.png  560w,
+                    ./images/tablet/ice-cream.png     224w,
+                    ./images/tablet/ice-cream@2x.png  448w,
+                    ./images/desktop/ice-cream.png    368w,
+                    ./images/desktop/ice-cream@2x.png 736w
+                  "
+                  sizes="(min-width: 1200px) 368px,
+                  (min-width: 768px) 224px, 
+                  (max-width: 767px) 280px, 100vw"
+                  src="./images/mobile/ice-cream.png"
+                  alt="Strewberry ice cream"
+                />
+              </div>
+              <article class="product__description">
+                <h3 class="product__subtitle">Ice cream</h3>
+                <img src="./images/white-dots.svg" alt="White dots" />
+                <p class="product__text">
+                  Indulge in our rich and creamy ice cream, handcrafted with
+                  all-natural ingredients and available in a variety of flavors.
+                </p>
+                <img
+                  class="arrow arrow--size"
+                  src="./images/arrow-2.svg"
+                  alt="red arrow"
+                />
+              </article>
+            </li>
+            <li class="product__item">
+              <div class="product__thumb">
+                <img
+                  srcset="
+                    ./images/mobile/ice-coffee.png     280w,
+                    ./images/mobile/ice-coffee@2x.png  560w,
+                    ./images/tablet/ice-coffee.png     224w,
+                    ./images/tablet/ice-coffee@2x.png  448w,
+                    ./images/desktop/ice-coffee.png    368w,
+                    ./images/desktop/ice-coffee@2x.png 736w
+                  "
+                  sizes="(min-width: 1200px) 368px,
+                  (min-width: 768px) 224px,
+                  (max-width: 767px) 280px, 100vw"
+                  src="./images/mobile/ice-coffee.png"
+                  alt="Ice coffee"
+                />
+              </div>
+              <article
+                class="product__description product__description--coffee"
+              >
+                <h3 class="product__subtitle">ice coffee</h3>
+                <img src="./images/white-dots.svg" alt="white dots" />
+                <p class="product__text">
+                  Refresh and energize with our perfectly brewed iced coffee,
+                  made with high-quality beans and served over ice.
+                </p>
+                <img
+                  class="arrow arrow--size"
+                  src="./images/arrow-2.svg"
+                  alt="red arrow"
+                />
+              </article>
+            </li>
+            <li class="product__item">
+              <div class="product__thumb">
+                <img
+                  srcset="
+                    ./images/mobile/milkshake.png     280w,
+                    ./images/mobile/milkshake@2x.png  560w,
+                    ./images/tablet/milkshake.png     224w,
+                    ./images/tablet/milkshake@2x.png  448w,
+                    ./images/desktop/milkshake.png    368w,
+                    ./images/desktop/milkshake@2x.png 736w
+                  "
+                  sizes="(min-width: 1200px) 368px,
+                  (min-width: 768px) 224px,
+                  (max-width: 767px) 280px, 100vw"
+                  src="./images/mobile/milkshake.png"
+                  alt="chocolate milkshake"
+                />
+              </div>
+              <article
+                class="product__description product__description--milkshake"
+              >
+                <h3 class="product__subtitle">milkshakes</h3>
+                <img src="./images/white-dots.svg" alt="white dots" />
+                <p class="product__text">
+                  Satisfy your sweet tooth with our thick, made with premium ice
+                  cream, topped with whipped cream and your favorite toppings.
+                </p>
+                <img
+                  src="./images/arrow-2.svg"
+                  alt="red arrow"
+                  class="arrow arrow--size"
+                />
+              </article>
             </li>
           </ul>
         </div>

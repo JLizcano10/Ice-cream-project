@@ -1,0 +1,157 @@
+.contact {
+  background-image: linear-gradient(
+    to bottom,
+    $background-white-1 24%,
+    $background-pink-light 24%
+  );
+
+  &__list {
+    @include flex(column, flex-start, center);
+    gap: 20px;
+  }
+  &__item {
+    @include flex(column, flex-start, flex-start);
+    gap: 20px;
+    font-weight: 500;
+    padding: 40px 32px;
+    border-radius: 24px;
+    background-color: $background-white-1;
+    box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 4px 12px rgb(212, 20, 67, 0.35);
+    }
+  }
+  &__headline {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $background-white-1;
+    border-radius: 4px;
+    background-color: $background-orange-1;
+
+    &--background {
+      background-color: $background-green-1;
+    }
+  }
+  &__sublist {
+    @include flex(column, flex-start, flex-start);
+    gap: 20px;
+  }
+  &__subitem {
+    width: 100%;
+    &--border {
+      border-top: 1px solid $border-grey-color;
+      border-bottom: 1px solid $border-grey-color;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  &__label {
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
+  &__text {
+    line-height: 1.8;
+    color: $secondary-text-color;
+
+    &--color {
+      line-height: 186%;
+      color: $background-pink-dark;
+
+      &:not(:last-child) {
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  &__buttons {
+    @include flex(column, center, center);
+    gap: 8px;
+    margin-top: 30px;
+  }
+}
+
+@include min-width(768px) {
+  .contact {
+    background-image: linear-gradient(
+      to bottom,
+      $background-white-1 49%,
+      $background-pink-light 49%
+    );
+
+    &__list {
+      @include flex(row, flex-start, center);
+      gap: 25px;
+    }
+    &__item {
+      @include flex(column, flex-start, flex-start);
+      gap: 20px;
+      padding: 40px 32px;
+    }
+    &__headline {
+      font-size: 16px;
+    }
+    &__sublist {
+      @include flex(column, flex-start, flex-start);
+      gap: 25px;
+    }
+    &__subitem {
+      &--border {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+    }
+    &__label {
+      font-size: 14px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 1.86;
+
+      &--color {
+        line-height: 166%;
+      }
+    }
+
+    &__buttons {
+      @include flex(row, center, center);
+      margin-top: 50px;
+    }
+  }
+}
+
+@include min-width(1200px) {
+  .contact {
+    background-image: linear-gradient(
+      to bottom,
+      $background-white-1 22%,
+      $background-pink-light 22%
+    );
+
+    &__item {
+      @include flex(column, flex-start, flex-start);
+      gap: 30px;
+      padding: 40px 32px;
+    }
+    &__sublist {
+      @include flex(column, flex-start, flex-start);
+      gap: 30px;
+    }
+    &__subitem {
+      &--border {
+        padding-top: 32px;
+        padding-bottom: 32px;
+      }
+    }
+    &__label {
+      font-size: 16px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+}

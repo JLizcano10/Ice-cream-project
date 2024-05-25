@@ -73,6 +73,10 @@ a {
     text-align: center;
     text-transform: uppercase;
     color: $accent-color;
+
+    &--hidden {
+      display: none;
+    }
   }
 }
 

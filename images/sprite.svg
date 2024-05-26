@@ -48,5 +48,8 @@
         <symbol id="icon-vector" viewBox="0 0 20 20">
             <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/>
         </symbol>
+        <symbol id="icon-dot" viewBox="0 0 35 32">
+            <path fill="#d9d9d9" style="fill: var(--color1, #d9d9d9)" d="M33.053 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+        </symbol>
     </defs>
 </svg>

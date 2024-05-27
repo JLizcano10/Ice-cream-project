@@ -64,6 +64,10 @@ a {
     text-align: center;
     text-transform: uppercase;
     color: $background-pink-dark;
+
+    &:hover {
+      animation: text-spacing 4s cubic-bezier(0.075, 0.82, 0.165, 1) 1;
+    }
   }
 
   &__title {
@@ -73,6 +77,9 @@ a {
     text-align: center;
     text-transform: uppercase;
     color: $accent-color;
+    &:hover {
+      animation: text-spacing 4s cubic-bezier(0.075, 0.82, 0.165, 1) 1;
+    }
 
     &--hidden {
       display: none;
@@ -90,6 +97,17 @@ a {
 
   &--size {
     width: 40px;
+  }
+}
+
+// ANIMACION
+@keyframes text-spacing {
+  0% {
+    letter-spacing: 0.5em;
+  }
+
+  100% {
+    letter-spacing: inherit;
   }
 }
 

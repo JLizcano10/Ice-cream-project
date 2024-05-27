@@ -6,7 +6,12 @@
   }
   &__thumb {
     width: 100%;
+    transform-origin: top left;
+    &:hover {
+      animation: rotateWithOrigin 1000ms linear 1;
+    }
   }
+
   //   Para coincidir con el diseño primero lo ubico aqui en el .how-it-made__content y en version para desktop se mueve a .how-it-made__section--flex.
   &__content {
     @include flex(column, flex-start, flex-start);
@@ -42,6 +47,7 @@
     width: 33px;
     height: 50px;
     fill: $background-pink-dark;
+    animation: iconRotation 5000ms linear infinite;
 
     &--medium {
       width: 44px;
@@ -61,6 +67,27 @@
     line-height: 170%;
     letter-spacing: 0.02em;
     text-align: left;
+  }
+}
+
+// ANIMACION
+@keyframes rotateWithOrigin {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 30deg);
+  }
+}
+
+@keyframes iconRotation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
   }
 }
 

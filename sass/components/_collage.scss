@@ -11,8 +11,8 @@
 
   &__grid {
     //  El responsive en el marcado HTML parece que le da forma correcta. Pero Revisar si con alturas algunas imagenes no se ven largas.
-    // width: 320px;
-    // height: 136px;
+    width: 320px;
+    height: 136px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 1fr 0.5fr repeat(4, 1fr) 0.5fr 1fr;
@@ -67,15 +67,15 @@
   }
 
   &__item > img {
-    // width: 43.59px;
-    // height: 43.86px;
     width: 100%;
     height: 100%;
+    transition: transform 500ms ease;
   }
-  //   &__item > .large {
-  //     width: 89.4px;
-  //     height: 89.6px;
-  //   }
+
+  &__item:hover > img,
+  &__item:focus > img {
+    transform: scale(1.2);
+  }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -94,6 +94,11 @@
       $background-pink-light 51%,
       $background-white-1 51%
     );
+
+    &__grid {
+      width: 768px;
+      height: 327px;
+    }
   }
 }
 
@@ -104,5 +109,16 @@
       $background-pink-light 22%,
       $background-white-1 22%
     );
+
+    &__container {
+      padding-left: 94px;
+      padding-right: 94px;
+    }
+
+    &__grid {
+      width: 1200px;
+      height: 430px;
+      gap: 8px;
+    }
   }
 }

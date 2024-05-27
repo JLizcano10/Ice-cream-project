@@ -56,12 +56,22 @@
   &__phone {
     display: inline-block;
     color: $accent-color;
+    transition: transform 500ms ease;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
+
   &__copy {
     width: 116px;
     font-weight: 700;
     line-height: 152%;
     color: $secondary-text-color;
+    transition: transform 500ms ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
 

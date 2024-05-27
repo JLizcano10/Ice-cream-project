@@ -8,11 +8,13 @@
   color: $accent-color;
   background-color: $background-white-1;
   cursor: pointer;
+  transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 
   &:hover,
   &:focus {
     background-color: $accent-color;
     color: $background-white-1;
+    transform: translateY(-5px);
   }
 
   &__vector {

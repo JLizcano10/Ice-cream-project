@@ -21,13 +21,19 @@
   &__list {
     display: none;
   }
-  //   &__item {
-  //   }
+  &__item {
+    transition: transform 750ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover,
+    &:focus {
+      transform: translateY(-5px);
+    }
+  }
   &__link {
     font-size: 16px;
     font-weight: 700;
     color: $background-white-1;
     transition: color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
     &:hover,
     &:focus {
       color: $accent-color;

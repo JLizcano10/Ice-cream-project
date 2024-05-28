@@ -90,10 +90,6 @@ a {
 .arrow {
   width: 18px;
   transition: transform 150ms ease-in;
-  &:hover,
-  &:focus {
-    transform: rotateZ(-90deg);
-  }
 
   &--size {
     width: 40px;

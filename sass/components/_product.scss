@@ -20,6 +20,7 @@
     right: 0;
     width: 100%;
     // height: 280px;
+    z-index: 10;
   }
   &__description {
     @include flex(column, flex-end, center);
@@ -53,13 +54,22 @@
     }
   }
 
+  &__item:hover &__description &__subtitle,
+  &__item:hover &__description &__text {
+    transform: scale(1.1);
+  }
+
+  &__item:hover &__description {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  }
+
   &__subtitle {
     font-family: "Titan One", sans-serif;
     font-size: 20px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $background-white-1;
-    transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 0.3s ease-in-out;
   }
   &__text {
     font-weight: 700;
@@ -68,8 +78,12 @@
     letter-spacing: 0.04em;
     text-align: center;
     color: $background-white-1;
-    transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 0.3s ease-in-out;
   }
+}
+
+.product__item:hover .product__description .arrow {
+  transform: rotateZ(-90deg);
 }
 
 @include min-width(768px) {
